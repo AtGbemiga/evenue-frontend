@@ -7,7 +7,7 @@ async function createEventFn({
   formDataBody: FormData;
   setErrMsg: React.Dispatch<React.SetStateAction<string>>;
 }) {
-  const url = `http://localhost:4192/api/v1/events`;
+  const url = `https://e-venues.ooshinfo.com/api/v1/events`;
   const token = Cookies.get("token");
 
   const res = await fetch(url, {

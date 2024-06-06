@@ -8,7 +8,7 @@ async function getOneGroupFn({
   group_id: string;
   setErrMsg: React.Dispatch<React.SetStateAction<string>>;
 }): Promise<Res4GetOne | undefined> {
-  const url = `http://localhost:4192/api/v1/groups/${group_id}`;
+  const url = `https://e-venues.ooshinfo.com/api/v1/groups/${group_id}`;
 
   const token = Cookies.get("token");
 

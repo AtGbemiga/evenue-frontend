@@ -5,7 +5,7 @@ async function getShortVideosFn({
 }: {
   setErrMsg: React.Dispatch<React.SetStateAction<string>>;
 }): Promise<GetShortVidsRes | undefined> {
-  const url = "http://localhost:4192/api/v1/shortVideos";
+  const url = "https://e-venues.ooshinfo.com/api/v1/shortVideos";
 
   const res = await fetch(url, {
     method: "GET",

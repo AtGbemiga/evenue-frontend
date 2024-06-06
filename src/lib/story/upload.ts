@@ -9,7 +9,7 @@ async function uploadStoryFn({
 
   setErrMsg: React.Dispatch<React.SetStateAction<string>>;
 }): Promise<Res4AddedStory | undefined> {
-  const url = `http://localhost:4192/api/v1/story`;
+  const url = `https://e-venues.ooshinfo.com/api/v1/story`;
 
   const token = Cookies.get("token");
 

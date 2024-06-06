@@ -10,7 +10,7 @@ async function addCommentFn({
   comment: string;
   setErrMsg: React.Dispatch<React.SetStateAction<string>>;
 }): Promise<AddedCommentRes | undefined> {
-  const url = `http://localhost:4192/api/v1/shortVideos/addComment`;
+  const url = `https://e-venues.ooshinfo.com/api/v1/shortVideos/addComment`;
 
   const token = Cookies.get("token");
 

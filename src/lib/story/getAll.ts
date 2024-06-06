@@ -10,9 +10,9 @@ async function getAllStoryFn({
   let url;
 
   if (story_id) {
-    url = `http://localhost:4192/api/v1/story/getAllInfo?story_id=${story_id}`;
+    url = `https://e-venues.ooshinfo.com/api/v1/story/getAllInfo?story_id=${story_id}`;
   } else {
-    url = "http://localhost:4192/api/v1/story/getAllInfo";
+    url = "https://e-venues.ooshinfo.com/api/v1/story/getAllInfo";
   }
 
   const res = await fetch(url, {

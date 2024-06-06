@@ -10,7 +10,7 @@ async function getChatHistoryFn({
   fk_recipient_id: number;
   setErrMsg: React.Dispatch<React.SetStateAction<string>>;
 }): Promise<Res4ChatHistory | undefined> {
-  const url = `http://localhost:4192/api/v1/chat/?fk_sender_id=${fk_sender_id}&fk_recipient_id=${fk_recipient_id}`;
+  const url = `https://e-venues.ooshinfo.com/api/v1/chat/?fk_sender_id=${fk_sender_id}&fk_recipient_id=${fk_recipient_id}`;
 
   const token = Cookies.get("token");
 

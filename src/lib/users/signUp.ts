@@ -11,7 +11,7 @@ async function signUpFn({
   password: string;
   setErrMsg: React.Dispatch<React.SetStateAction<string>>;
 }) {
-  const url = "http://localhost:4192/api/v1/users";
+  const url = "https://e-venues.ooshinfo.com/api/v1/users";
 
   const res = await fetch(url, {
     method: "POST",

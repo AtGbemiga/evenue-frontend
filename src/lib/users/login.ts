@@ -10,7 +10,7 @@ async function loginFn({
   password: string;
   setErrMsg: React.Dispatch<React.SetStateAction<string>>;
 }): Promise<Res4LogIn | undefined> {
-  const url = "http://localhost:4192/api/v1/users/login";
+  const url = "https://e-venues.ooshinfo.com/api/v1/users/login";
 
   const res = await fetch(url, {
     method: "POST",

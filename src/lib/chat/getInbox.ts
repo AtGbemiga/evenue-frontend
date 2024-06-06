@@ -6,7 +6,7 @@ async function getInboxFn({
 }: {
   setErrMsg: React.Dispatch<React.SetStateAction<string>>;
 }): Promise<Res4InboxLIInfo | undefined> {
-  const url = `http://localhost:4192/api/v1/chat/getInbox`;
+  const url = `https://e-venues.ooshinfo.com/api/v1/chat/getInbox`;
 
   const token = Cookies.get("token");
 

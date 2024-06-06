@@ -1,5 +1,5 @@
 async function increaseViewFn({ video_id }: { video_id: number }) {
-  const url = `http://localhost:4192/api/v1/shortVideos/increaseView`;
+  const url = `https://e-venues.ooshinfo.com/api/v1/shortVideos/increaseView`;
 
   const res = await fetch(url, {
     method: "POST",

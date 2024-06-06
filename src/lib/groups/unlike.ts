@@ -8,7 +8,7 @@ async function unlikePostFn({
   group_post_id: number;
   setErrMsg: React.Dispatch<React.SetStateAction<string>>;
 }): Promise<Res4UnLike | undefined> {
-  const url = `http://localhost:4192/api/v1/groups/unlike/${group_post_id}`;
+  const url = `https://e-venues.ooshinfo.com/api/v1/groups/unlike/${group_post_id}`;
 
   const token = Cookies.get("token");
 

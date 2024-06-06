@@ -10,7 +10,7 @@ async function eventServicesSearchFn({
 
   setErrMsg: React.Dispatch<React.SetStateAction<string>>;
 }): Promise<GetLimitedInfoForAllResponse | undefined> {
-  const url = `http://localhost:4192/api/v1/eventServices/search?category=${category}&location=${location}`;
+  const url = `https://e-venues.ooshinfo.com/api/v1/eventServices/search?category=${category}&location=${location}`;
 
   const res = await fetch(url, {
     method: "GET",

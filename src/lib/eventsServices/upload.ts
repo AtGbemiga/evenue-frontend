@@ -7,7 +7,7 @@ async function uploadEServiceFn({
   formDataBody: FormData;
   setErrMsg: React.Dispatch<React.SetStateAction<string>>;
 }): Promise<{ message: string } | undefined> {
-  const url = `http://localhost:4192/api/v1/eventServices`;
+  const url = `https://e-venues.ooshinfo.com/api/v1/eventServices`;
   const token = Cookies.get("token");
 
   const res = await fetch(url, {

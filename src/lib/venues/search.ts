@@ -17,7 +17,7 @@ async function searchVenueFn({
   rating: string;
   setErrMsg: React.Dispatch<React.SetStateAction<string>>;
 }): Promise<Res4VenueSearch | undefined> {
-  const url = `http://localhost:4192/api/v1/venues/search?rating=${rating}&no_of_guest=${no_of_guest}&category=${category}&venue_type=${venue_type}&space_preference=${space_preference}&location=${location}`;
+  const url = `https://e-venues.ooshinfo.com/api/v1/venues/search?rating=${rating}&no_of_guest=${no_of_guest}&category=${category}&venue_type=${venue_type}&space_preference=${space_preference}&location=${location}`;
 
   const res = await fetch(url, {
     method: "GET",

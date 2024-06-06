@@ -9,7 +9,7 @@ async function addLikeFn({
 
   setErrMsg: React.Dispatch<React.SetStateAction<string>>;
 }): Promise<Res4AddedLike | undefined> {
-  const url = `http://localhost:4192/api/v1/shortVideos/addLike`;
+  const url = `https://e-venues.ooshinfo.com/api/v1/shortVideos/addLike`;
 
   const token = Cookies.get("token");
 

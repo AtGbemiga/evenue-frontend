@@ -5,7 +5,7 @@ async function getCategoryFn({
 }: {
   setErrMsg: React.Dispatch<React.SetStateAction<string>>;
 }): Promise<Res4Category | undefined> {
-  const url = `http://localhost:4192/api/v1/venues/catc/getCategoryCount`;
+  const url = `https://e-venues.ooshinfo.com/api/v1/venues/catc/getCategoryCount`;
 
   const res = await fetch(url, {
     method: "GET",

@@ -5,7 +5,7 @@ async function getLimitedInfoForAllFn({
 }: {
   setErrMsg: React.Dispatch<React.SetStateAction<string>>;
 }): Promise<EventShowcaseResponse | undefined> {
-  const url = `http://localhost:4192/api/v1/eventsShowcase/getLimitedInfo`;
+  const url = `https://e-venues.ooshinfo.com/api/v1/eventsShowcase/getLimitedInfo`;
 
   const res = await fetch(url, {
     method: "GET",

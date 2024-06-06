@@ -56,36 +56,24 @@ export const PostCTAs = ({
         <div>
           <span onClick={handleLikeToggle}>
             {likeState ? (
-              <img
-                src="/home/likeRed.svg"
-                alt="red like"
-              />
+              <img src="/home/likeRed.svg" alt="red like" />
             ) : (
-              <img
-                src="/home/bx_like.svg"
-                alt="unlike"
-              />
+              <img src="/home/bx_like.svg" alt="unlike" />
             )}
             <p>{likeState ? "Unlike" : "Like"}</p>
           </span>
         </div>
         <div>
-          <img
-            src="/home/commentIcon.svg"
-            alt="comment"
-          />
+          <img src="/home/commentIcon.svg" alt="comment" />
           <p>Comment</p>
         </div>
         <div onClick={() => setHideShare((prev) => !prev)}>
-          <img
-            src="/home/share.svg"
-            alt="share"
-          />
+          <img src="/home/share.svg" alt="share" />
           <p>Share</p>
         </div>
         {!hideShare && (
           <Share
-            uRL={`http://localhost:4192/api/v1/groups/${group_id}`}
+            uRL={`https://e-venues.ooshinfo.com/api/v1/groups/${group_id}`}
             title={`${first_name} ${last_name} short video`} // change to name of the group
             hashtag="#evenueShortVideo"
             summary={about.slice(0, 100)}

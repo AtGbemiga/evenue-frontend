@@ -16,7 +16,7 @@ async function searchVenuesFn({
   starting_price: string;
   setErrMsg: React.Dispatch<React.SetStateAction<string>>;
 }): Promise<VenuesRes | undefined> {
-  const url = `http://localhost:4192/api/v1/users/searchVenues?title=${title}&location=${location}&category=${category}&venue_type=${venue_type}&starting_price=${starting_price}`;
+  const url = `https://e-venues.ooshinfo.com/api/v1/users/searchVenues?title=${title}&location=${location}&category=${category}&venue_type=${venue_type}&starting_price=${starting_price}`;
 
   const token = Cookies.get("token");
 

@@ -7,7 +7,7 @@ async function updateProfileFn({
   formDataBody: FormData;
   setErrMsg: React.Dispatch<React.SetStateAction<string>>;
 }) {
-  const url = "http://localhost:4192/api/v1/users/updateProfile";
+  const url = "https://e-venues.ooshinfo.com/api/v1/users/updateProfile";
 
   const token = Cookies.get("token");
 

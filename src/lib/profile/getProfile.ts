@@ -6,7 +6,7 @@ async function getProfileFn({
 }: {
   setErrMsg: React.Dispatch<React.SetStateAction<string>>;
 }): Promise<ProfileRes | undefined> {
-  const url = "http://localhost:4192/api/v1/users/getProfile";
+  const url = "https://e-venues.ooshinfo.com/api/v1/users/getProfile";
 
   const token = Cookies.get("token");
 

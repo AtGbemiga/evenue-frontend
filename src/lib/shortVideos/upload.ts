@@ -9,7 +9,7 @@ async function uploadShortVideoFn({
 
   setErrMsg: React.Dispatch<React.SetStateAction<string>>;
 }): Promise<Res4AddedShortVid | undefined> {
-  const url = `http://localhost:4192/api/v1/shortVideos`;
+  const url = `https://e-venues.ooshinfo.com/api/v1/shortVideos`;
 
   const token = Cookies.get("token");
 

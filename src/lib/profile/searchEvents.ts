@@ -16,7 +16,7 @@ async function searchEventsFn({
   price: string;
   setErrMsg: React.Dispatch<React.SetStateAction<string>>;
 }): Promise<SearchRes | undefined> {
-  const url = `http://localhost:4192/api/v1/users/searchEvent?name=${name}&location=${location}&category=${category}&frequency=${frequency}&price=${price}`;
+  const url = `https://e-venues.ooshinfo.com/api/v1/users/searchEvent?name=${name}&location=${location}&category=${category}&frequency=${frequency}&price=${price}`;
 
   const token = Cookies.get("token");
 

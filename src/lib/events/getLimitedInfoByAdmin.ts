@@ -7,7 +7,8 @@ async function getLimitedInfoByAdminFn({
   category: string;
   setErrMsg: React.Dispatch<React.SetStateAction<string>>;
 }): Promise<Response> {
-  const url = "http://localhost:4192/api/v1/events/q/limitedInfoByAdmin";
+  const url =
+    "https://e-venues.ooshinfo.com/api/v1/events/q/limitedInfoByAdmin";
 
   // body for POST request
 

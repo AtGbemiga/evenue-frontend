@@ -6,7 +6,8 @@ async function getVenueProfileFn({
 }: {
   setErrMsg: React.Dispatch<React.SetStateAction<string>>;
 }): Promise<EventProfileLRes | undefined> {
-  const url = "http://localhost:4192/api/v1/users/getLimitedVenuesInfoProfile";
+  const url =
+    "https://e-venues.ooshinfo.com/api/v1/users/getLimitedVenuesInfoProfile";
 
   const token = Cookies.get("token");
 

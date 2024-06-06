@@ -10,9 +10,9 @@ async function getLimitedInfoForAllFn({
   let url: string;
 
   if (!category) {
-    url = `http://localhost:4192/api/v1/eventServices/getLimitedInfoForAll`;
+    url = `https://e-venues.ooshinfo.com/api/v1/eventServices/getLimitedInfoForAll`;
   } else {
-    url = `http://localhost:4192/api/v1/eventServices/getLimitedInfoForAll?category=${category}`;
+    url = `https://e-venues.ooshinfo.com/api/v1/eventServices/getLimitedInfoForAll?category=${category}`;
   }
 
   const res = await fetch(url, {

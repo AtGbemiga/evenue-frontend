@@ -11,7 +11,7 @@ async function searchFn({
   category: string;
   setErrMsg: React.Dispatch<React.SetStateAction<string>>;
 }): Promise<Response> {
-  const url = `http://localhost:4192/api/v1/events/search?name=${name}&location=${location}&category=${category}`;
+  const url = `https://e-venues.ooshinfo.com/api/v1/events/search?name=${name}&location=${location}&category=${category}`;
 
   const res = await fetch(url, {
     method: "GET",

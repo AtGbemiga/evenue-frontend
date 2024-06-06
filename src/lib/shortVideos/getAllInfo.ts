@@ -7,7 +7,7 @@ async function getShortVideosAllFn({
   video_id: string;
   setErrMsg: React.Dispatch<React.SetStateAction<string>>;
 }): Promise<GetVidsAllRes | undefined> {
-  const url = `http://localhost:4192/api/v1/shortVideos/getAllInfo?video_id=${video_id}`;
+  const url = `https://e-venues.ooshinfo.com/api/v1/shortVideos/getAllInfo?video_id=${video_id}`;
 
   const res = await fetch(url, {
     method: "GET",

@@ -1,7 +1,7 @@
 import Cookies from "js-cookie";
 
 async function updatePostViewsFn({ group_post_id }: { group_post_id: number }) {
-  const url = `http://localhost:4192/api/v1/groups/updateViews/${group_post_id}`;
+  const url = `https://e-venues.ooshinfo.com/api/v1/groups/updateViews/${group_post_id}`;
 
   const token = Cookies.get("token");
 

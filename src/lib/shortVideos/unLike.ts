@@ -9,7 +9,7 @@ async function unLikeFn({
 
   setErrMsg: React.Dispatch<React.SetStateAction<string>>;
 }): Promise<ResUnLike | undefined> {
-  const url = `http://localhost:4192/api/v1/shortVideos/unLike`;
+  const url = `https://e-venues.ooshinfo.com/api/v1/shortVideos/unLike`;
 
   const token = Cookies.get("token");
 

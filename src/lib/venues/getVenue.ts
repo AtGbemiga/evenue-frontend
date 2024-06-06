@@ -7,7 +7,7 @@ async function getVenueFn({
   venue_id: number;
   setErrMsg: React.Dispatch<React.SetStateAction<string>>;
 }): Promise<VenueFullInfoResponse | undefined> {
-  const url = `http://localhost:4192/api/v1/venues/${venue_id}`;
+  const url = `https://e-venues.ooshinfo.com/api/v1/venues/${venue_id}`;
 
   const res = await fetch(url, {
     method: "GET",
