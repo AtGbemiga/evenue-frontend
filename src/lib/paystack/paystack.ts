@@ -5,7 +5,7 @@ export const payStackFn = async ({
   email: string;
   amount: string;
 }) => {
-  const url = `http://127.0.0.1:4192/api/v1/paystack/payment?amount=${amount}&email=${email}`;
+  const url = `https://e-venues.ooshinfo.com/api/v1/paystack/payment?amount=${amount}&email=${email}`;
 
   const res = await fetch(url, {
     method: "GET",
